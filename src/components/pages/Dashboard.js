@@ -24,7 +24,7 @@ function Dashboard() {
       <div className="col-span-4">
           <ChartData />
         </div>
-        <div className="col-span-1">
+        <div className=" md:grid-cols-1 w-full">
           <SatisfactionCard />
         </div>
       </div>

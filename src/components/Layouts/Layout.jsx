@@ -7,7 +7,7 @@ function Layout() {
   const [activeItem, setActiveItem] = useState('Dashboard'); // Default to 'Dashboard'
 
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen overflow-hidden">
       {/* Sidebar */}
       <aside
         className={`fixed top-0 left-0 z-40 h-full w-64 bg-blue-600 text-white transform transition-transform ${
@@ -74,7 +74,7 @@ function Layout() {
         </header>
 
         {/* Main Body */}
-        <main className="flex-1 overflow-y-auto px-1 main-bg">
+        <main className="flex-1 overflow-y-auto px-1 main-bg max-h-screen">
           <Outlet /> {/* Dynamic content will render here */}
         </main>
       </div>

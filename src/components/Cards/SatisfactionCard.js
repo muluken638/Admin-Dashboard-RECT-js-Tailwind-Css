@@ -50,12 +50,12 @@ const SatisfactionCard = () => {
   };
 
   return (
-    <div className="container mx-auto p-6 bg-white rounded-lg shadow-lg w-100 h-full">
-      <h2 className="text-2xl font-semibold text-blue-500 flex items-center space-x-2">
+    <div className="container bg-white rounded-lg shadow-lg w-100 h-full">
+      <h2 className="text-lg font-semibold text-blue-500 flex items-start px-2 ">
         <span>⭐</span>
         <span>Customer Satisfaction</span>
       </h2>
-      <div className="w-full mx-auto mt-6">
+      <div className="w-full flex justify-center items-center mt-6">
         <Doughnut data={data} options={options} />
       </div>
       <div className="mt-6 ">
